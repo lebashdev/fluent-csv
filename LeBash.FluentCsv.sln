@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30406.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeBash.FluentCsv", "LeBash.FluentCsv\LeBash.FluentCsv.csproj", "{5B710936-D44F-4260-868B-D74E4CA6E661}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeBash.FluentCsv.TestConsole", "LeBash.FluentCsv.TestConsole\LeBash.FluentCsv.TestConsole.csproj", "{A5466B1B-0B45-4B33-BC94-6E17DE8B98A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B710936-D44F-4260-868B-D74E4CA6E661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B710936-D44F-4260-868B-D74E4CA6E661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B710936-D44F-4260-868B-D74E4CA6E661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B710936-D44F-4260-868B-D74E4CA6E661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5466B1B-0B45-4B33-BC94-6E17DE8B98A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5466B1B-0B45-4B33-BC94-6E17DE8B98A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5466B1B-0B45-4B33-BC94-6E17DE8B98A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5466B1B-0B45-4B33-BC94-6E17DE8B98A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {95B4FB5D-E3BB-4F4C-9F2C-F2F8E16B221F}
+	EndGlobalSection
+EndGlobal
