@@ -4,6 +4,10 @@ using System.Threading.Tasks;
 
 namespace LeBash.FluentCsv.TestConsole
 {
+    // This sample progam shows how a fluent API can be used
+    // to configure some behavior in a declarative way.
+    // In this case, we configure a CSV converter.
+
     class Program
     {
         static async Task Main(string[] args)
