@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -26,15 +27,12 @@ namespace LeBash.FluentCsv.TestConsole
                 .WithDelimiter(";")
                 .Build();
 
-            var directory = "c:\\temp";
-
-            if (Directory.Exists(directory) == false)
-            {
-                Directory.CreateDirectory(directory);
-            }
+            var path = "test.csv";
 
             // Render the CSV to a file.
-            await template.RenderToFileAsync(Path.Combine(directory, "hello.csv"), report);
+            await template.RenderToFileAsync(path, report);
+
+            Console.WriteLine($"The file has been created at '{path}'.");
         }
 
         static MyReport GetData()
