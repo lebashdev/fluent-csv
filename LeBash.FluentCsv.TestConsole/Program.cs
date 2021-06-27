@@ -13,13 +13,10 @@ namespace LeBash.FluentCsv.TestConsole
 
             // Create a template definition.
             var template = CsvTemplateBuilder.Create<MyReport, Record>()
-                .AddColumns(() =>
+                .AddColumns(columns =>
                 {
-                    return new List<(string, ColumnMapper<Record>)>
-                    {
-                        ("Id", x => x.Id.ToString()),
-                        ("Name", x => x.Name)
-                    };
+                    columns.Add(("Id", x => x.Id.ToString()));
+                    columns.Add(("Name", x => x.Name));
                 })
                 .WithProjector(data => data.Items)
                 .WithDelimiter(";")

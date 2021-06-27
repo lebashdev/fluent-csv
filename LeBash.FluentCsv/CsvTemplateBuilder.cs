@@ -54,9 +54,9 @@ namespace LeBash.FluentCsv
             return this._template;
         }
 
-        public ICsvTemplateBuilder<T, TRecord> AddColumns(Func<IEnumerable<(string, ColumnMapper<TRecord>)>> columnBuilder)
+        public ICsvTemplateBuilder<T, TRecord> AddColumns(Action<List<(string, ColumnMapper<TRecord>)>> columnBuilder)
         {
-            this._columns.AddRange(columnBuilder());
+            columnBuilder(this._columns);
 
             return this;
         }
